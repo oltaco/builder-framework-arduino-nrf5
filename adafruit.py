@@ -32,7 +32,8 @@ board = env.BoardConfig()
 variant = board.get("build.variant")
 
 if board.id in ("wiscore_rak4631"):
-   FRAMEWORK_DIR = platform.get_package_dir("framework-arduinoraknrf52")
+   # FRAMEWORK_DIR = platform.get_package_dir("framework-arduinoraknrf52")
+   FRAMEWORK_DIR = platform.get_package_dir("framework-arduinoadafruitnrf52")
 else:
    FRAMEWORK_DIR = platform.get_package_dir("framework-arduinoadafruitnrf52")
 assert isdir(FRAMEWORK_DIR)
